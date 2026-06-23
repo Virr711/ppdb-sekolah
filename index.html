@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB SMK Bina Nusa - Penerimaan Peserta Didik Baru 2026/2027</title>
+    <!-- Meta SEO -->
+    <meta name="description" content="Pendaftaran Peserta Didik Baru (PPDB) SMK Bina Nusa Tahun Ajaran 2026/2027. Daftarkan diri Anda segera secara online melalui portal resmi.">
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo-area" id="logo-nav">
+                <!-- SVG School Logo -->
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                </div>
+                <div class="logo-text">
+                    <span class="school-name">SMK BINA NUSA</span>
+                    <span class="school-tagline">Unggul, Berkarakter & Inovatif</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-target="home-section">Beranda</a>
+                <a href="#jurusan" class="nav-link" data-target="jurusan-section">Jurusan</a>
+                <a href="#alur" class="nav-link" data-target="alur-section">Alur & Jadwal</a>
+                <a href="#cek-status" class="nav-link" data-target="status-section">Cek Kelulusan</a>
+                
+                <!-- Dynamic Registration/Dashboard Nav -->
+                <a href="#daftar" class="btn btn-primary" id="btn-daftar-nav" data-target="register-section">Daftar / Dashboard</a>
+                
+                <!-- Dynamic Login/Session Info -->
+                <a href="#auth" class="nav-link staff-link" id="nav-auth-btn" data-target="auth-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span id="nav-auth-text">Masuk</span>
+                </a>
+                
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-sun hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M22 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+                
+                <!-- Dashboard Staff (Only shown when logged in as admin/bendahara/kepala) -->
+                <a href="#staff" class="nav-link admin-link hidden" id="nav-staff-dashboard" data-target="admin-section">
+                    <span>Panel Panitia</span>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- ================= HOME SECTION ================= -->
+        <section id="home-section" class="app-section active">
+            <!-- Carousel Slideshow Banner (Gambar 4 Style) -->
+            <div class="carousel-container" id="home-carousel">
+                <div class="carousel-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide active" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(14, 165, 233, 0.4)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop');">
+                        <div class="carousel-content">
+                            <div class="carousel-badge">PPDB TA 2026/2027</div>
+                            <h2>Pendaftaran Online PPDB <span>SMK Bina Nusa</span></h2>
+                            <p>Proses pendaftaran cepat, transparan, dan terintegrasi pembayaran online. Dapatkan akses masuk langsung sekarang.</p>
+                            <div class="carousel-actions">
+                                <button class="btn btn-primary btn-large btn-nav-trigger" data-target="register-section">Isi Formulir & Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(14, 165, 233, 0.4)), url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200&auto=format&fit=crop');">
+                        <div class="carousel-content">
+                            <div class="carousel-badge discount">PROMO BEASISWA</div>
+                            <h2>Diskon Uang Pangkal Hingga <span>50%</span></h2>
+                            <p>Tersedia potongan khusus bagi calon pendaftar berprestasi dan pendaftar gelombang pertama. Kuota terbatas untuk 50 orang!</p>
+                            <div class="carousel-actions">
+                                <button class="btn btn-primary btn-large btn-nav-trigger" data-target="register-section">Daftar Akun Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(14, 165, 233, 0.4)), url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop');">
+                        <div class="carousel-content">
+                            <div class="carousel-badge info">FASILITAS UNGGULAN</div>
+                            <h2>Laboratorium IT Terstandarisasi Industri</h2>
+                            <p>SMK Bina Nusa dilengkapi Lab Komputer canggih, Studio Seni DKV, Bengkel Jaringan Cisco, dan ruang belajar interaktif.</p>
+                            <div class="carousel-actions">
+                                <button class="btn btn-outline btn-large btn-nav-trigger" data-target="jurusan-section">Lihat Kompetensi Keahlian</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Control Buttons -->
+                <button class="carousel-arrow prev" id="btn-carousel-prev">&#10094;</button>
+                <button class="carousel-arrow next" id="btn-carousel-next">&#10095;</button>
+                <!-- Indicators -->
+                <div class="carousel-dots" id="carousel-indicators">
+                    <!-- Dots generated in JS -->
+                </div>
+            </div>
+
+            <!-- School Statistics Box -->
+            <div class="container py-3">
+                <div class="hero-stats-bar">
+                    <div class="stat-bar-item">
+                        <span class="stat-bar-num">A</span>
+                        <span class="stat-bar-lbl">Akreditasi BAN-SM</span>
+                    </div>
+                    <div class="stat-bar-item">
+                        <span class="stat-bar-num">5</span>
+                        <span class="stat-bar-lbl">Kompetensi Keahlian</span>
+                    </div>
+                    <div class="stat-bar-item">
+                        <span class="stat-bar-num">Rp 150K</span>
+                        <span class="stat-bar-lbl">Biaya Formulir PPDB</span>
+                    </div>
+                    <div class="stat-bar-item">
+                        <span class="stat-bar-num">95%</span>
+                        <span class="stat-bar-lbl">Alumni Terserap Industri</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Jurusan Quick Overview (Gambar 3 Game Cards Style) -->
+            <div class="jurusan-overview-section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Pilih Kompetensi Keahlian</h2>
+                        <p>Dapatkan materi kejuruan bersertifikasi industri yang dirancang untuk kebutuhan kerja masa kini.</p>
+                    </div>
+                    
+                    <div class="majors-game-grid">
+                        <div class="major-game-card btn-nav-trigger" data-target="jurusan-section">
+                            <div class="card-image-bg" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop');"></div>
+                            <div class="card-overlay">
+                                <span class="badge-tag rpl">RPL</span>
+                                <h3>Rekayasa Perangkat Lunak</h3>
+                                <p>Belajar Coding, Web & Mobile App Development.</p>
+                                <div class="card-footer-info">
+                                    <span>Kuota: 72 Siswa</span>
+                                    <span>Detail &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="major-game-card btn-nav-trigger" data-target="jurusan-section">
+                            <div class="card-image-bg" style="background-image: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop');"></div>
+                            <div class="card-overlay">
+                                <span class="badge-tag tkj">TKJ</span>
+                                <h3>Teknik Komputer Jaringan</h3>
+                                <p>Fokus Infrastruktur Server, Jaringan & Cisco Academy.</p>
+                                <div class="card-footer-info">
+                                    <span>Kuota: 72 Siswa</span>
+                                    <span>Detail &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="major-game-card btn-nav-trigger" data-target="jurusan-section">
+                            <div class="card-image-bg" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop');"></div>
+                            <div class="card-overlay">
+                                <span class="badge-tag dkv">DKV</span>
+                                <h3>Desain Komunikasi Visual</h3>
+                                <p>Kreatif dalam Desain Grafis, Video, Animasi & Media.</p>
+                                <div class="card-footer-info">
+                                    <span>Kuota: 36 Siswa</span>
+                                    <span>Detail &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button class="btn btn-outline btn-nav-trigger" data-target="jurusan-section">Lihat Seluruh Pilihan Jurusan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= JURUSAN SECTION ================= -->
+        <section id="jurusan-section" class="app-section">
+            <div class="container py-4">
+                <div class="section-header text-center">
+                    <h2>5 Pilihan Kompetensi Keahlian (Jurusan)</h2>
+                    <p>SMK Bina Nusa menawarkan program unggulan dengan kurikulum berbasis kemitraan industri.</p>
+                </div>
+                <div class="jurusan-detail-grid">
+                    <!-- RPL -->
+                    <div class="jurusan-detail-card">
+                        <div class="detail-card-header rpl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" x2="10" y1="4" y2="20"/></svg>
+                            <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+                        </div>
+                        <div class="detail-card-body">
+                            <p>Mempersiapkan siswa menjadi Software Engineer, Fullstack Web Developer, dan Mobile App Programmer.</p>
+                            <h5>Materi Unggulan:</h5>
+                            <ul>
+                                <li>Pemrograman Berorientasi Objek (OOP) & Database</li>
+                                <li>Pengembangan Web Modern (JS, PHP, Restful API)</li>
+                                <li>Pemrograman Mobile Android/iOS (Flutter)</li>
+                            </ul>
+                            <div class="detail-card-footer">
+                                <span><strong>Akreditasi:</strong> A</span>
+                                <span><strong>Kuota:</strong> 72 Siswa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TKJ -->
+                    <div class="jurusan-detail-card">
+                        <div class="detail-card-header tkj">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6" y1="6" y2="6"/><line x1="6" x2="6" y1="18" y2="18"/></svg>
+                            <h3>Teknik Komputer & Jaringan (TKJ)</h3>
+                        </div>
+                        <div class="detail-card-body">
+                            <p>Membentuk spesialis infrastruktur jaringan, server administrator, cloud engineer, dan keamanan siber.</p>
+                            <h5>Materi Unggulan:</h5>
+                            <ul>
+                                <li>Konfigurasi Routing & Switching (CISCO & Mikrotik)</li>
+                                <li>Administrasi Sistem Jaringan Server (Linux & Windows)</li>
+                                <li>Instalasi Fiber Optic, Keamanan Jaringan & IoT</li>
+                            </ul>
+                            <div class="detail-card-footer">
+                                <span><strong>Akreditasi:</strong> A</span>
+                                <span><strong>Kuota:</strong> 72 Siswa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DKV -->
+                    <div class="jurusan-detail-card">
+                        <div class="detail-card-header dkv">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                            <h3>Desain Komunikasi Visual (DKV)</h3>
+                        </div>
+                        <div class="detail-card-body">
+                            <p>Menyalurkan bakat kreatif siswa dalam dunia periklanan, videografi, fotografi, ilustrator, dan animasi.</p>
+                            <h5>Materi Unggulan:</h5>
+                            <ul>
+                                <li>Desain Grafis Komparatif & Tipografi</li>
+                                <li>Fotografi Studio, Produksi Audio-Video & Editing</li>
+                                <li>Pembuatan Animasi 2D/3D & Branding Korporat</li>
+                            </ul>
+                            <div class="detail-card-footer">
+                                <span><strong>Akreditasi:</strong> A</span>
+                                <span><strong>Kuota:</strong> 36 Siswa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AKL -->
+                    <div class="jurusan-detail-card">
+                        <div class="detail-card-header akl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            <h3>Akuntansi & Keuangan Lembaga (AKL)</h3>
+                        </div>
+                        <div class="detail-card-body">
+                            <p>Membentuk profesional keuangan yang teliti, mahir program akuntansi komputer, perpajakan, dan perbankan.</p>
+                            <h5>Materi Unggulan:</h5>
+                            <ul>
+                                <li>Akuntansi Keuangan & Laporan Keuangan Neraca</li>
+                                <li>Perpajakan & Administrasi Keuangan Perusahaan</li>
+                                <li>Komputer Akuntansi (Sistem Accurate & MYOB)</li>
+                            </ul>
+                            <div class="detail-card-footer">
+                                <span><strong>Akreditasi:</strong> A</span>
+                                <span><strong>Kuota:</strong> 36 Siswa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OTKP -->
+                    <div class="jurusan-detail-card">
+                        <div class="detail-card-header otkp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <h3>Otomatisasi & Tata Kelola Perkantoran (OTKP)</h3>
+                        </div>
+                        <div class="detail-card-body">
+                            <p>Mempersiapkan tenaga administrasi perkantoran modern, humas perkantoran, dan sekretaris eksekutif.</p>
+                            <h5>Materi Unggulan:</h5>
+                            <ul>
+                                <li>Kearsipan Digital & Administrasi Kepegawaian</li>
+                                <li>Korespondensi Bisnis Bahasa Indonesia & Inggris</li>
+                                <li>Teknologi Perkantoran & Public Relations</li>
+                            </ul>
+                            <div class="detail-card-footer">
+                                <span><strong>Akreditasi:</strong> A</span>
+                                <span><strong>Kuota:</strong> 36 Siswa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ALUR & JADWAL SECTION ================= -->
+        <section id="alur-section" class="app-section">
+            <div class="container py-4">
+                <div class="section-header text-center">
+                    <h2>Alur Pendaftaran PPDB Online</h2>
+                    <p>Ikuti langkah mudah pendaftaran hingga verifikasi kelulusan siswa baru.</p>
+                </div>
+                
+                <div class="alur-timeline">
+                    <div class="alur-step">
+                        <div class="step-badge">1</div>
+                        <div class="step-content">
+                            <h3>Registrasi Akun Orang Tua</h3>
+                            <p>Buat akun Orang Tua Siswa menggunakan menu "Daftar / Dashboard" untuk memulai proses pengisian berkas pendaftaran.</p>
+                        </div>
+                    </div>
+                    <div class="alur-step">
+                        <div class="step-badge">2</div>
+                        <div class="step-content">
+                            <h3>Isi Formulir & Pilih Metode Pembayaran</h3>
+                            <p>Isi data diri calon siswa, riwayat nilai rapor, serta pilih metode pembayaran pendaftaran sebesar <strong>Rp 150.000</strong> (E-Wallet/VA/Cash).</p>
+                        </div>
+                    </div>
+                    <div class="alur-step">
+                        <div class="step-badge">3</div>
+                        <div class="step-content">
+                            <h3>Kirim Pembayaran & Unggah Bukti</h3>
+                            <p>Lakukan transfer/pembayaran, kemudian unggah foto bukti transfer di portal dashboard Orang Tua Anda untuk diverifikasi.</p>
+                        </div>
+                    </div>
+                    <div class="alur-step">
+                        <div class="step-badge">4</div>
+                        <div class="step-content">
+                            <h3>Verifikasi Bendahara & Berkas</h3>
+                            <p>Bendahara akan memverifikasi bukti transfer. Setelah Lunas, Panitia/Admin akan memvalidasi nilai rapor & syarat administrasi.</p>
+                        </div>
+                    </div>
+                    <div class="alur-step">
+                        <div class="step-badge">5</div>
+                        <div class="step-content">
+                            <h3>Cek Kelulusan & Cetak Bukti</h3>
+                            <p>Hasil kelulusan diumumkan online. Unduh & cetak Surat Kelulusan langsung dari sistem untuk keperluan daftar ulang fisik.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jadwal-container mt-4">
+                    <h3 class="jadwal-title text-center">Kalender Kegiatan PPDB 2026/2027</h3>
+                    <div class="jadwal-grid">
+                        <div class="jadwal-card">
+                            <span class="jadwal-date">01 Mar - 31 Mei 2026</span>
+                            <span class="jadwal-activity">Pendaftaran Gelombang 1</span>
+                        </div>
+                        <div class="jadwal-card highlight">
+                            <span class="jadwal-date">03 Juni 2026</span>
+                            <span class="jadwal-activity">Pengumuman Kelulusan</span>
+                        </div>
+                        <div class="jadwal-card">
+                            <span class="jadwal-date">05 - 10 Juni 2026</span>
+                            <span class="jadwal-activity">Daftar Ulang Gelombang 1</span>
+                        </div>
+                        <div class="jadwal-card">
+                            <span class="jadwal-date">01 - 30 Juni 2026</span>
+                            <span class="jadwal-activity">Gelombang 2 (Jika Kuota Tersisa)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ORANG TUA AUTHENTICATION SECTION ================= -->
+        <section id="auth-section" class="app-section">
+            <div class="container py-4">
+                <div class="auth-box-container">
+                    <div class="auth-tabs">
+                        <button class="auth-tab-btn active" id="btn-tab-login">Masuk Akun</button>
+                        <button class="auth-tab-btn" id="btn-tab-register">Daftar Akun Baru</button>
+                    </div>
+
+                    <!-- Auth Box Body: Login -->
+                    <div class="auth-tab-content active" id="auth-login-box">
+                        <div class="auth-header text-center">
+                            <h3>Portal Masuk PPDB</h3>
+                            <p>Silakan masuk untuk mendaftarkan siswa atau memantau status berkas Anda.</p>
+                        </div>
+                        <form id="user-login-form">
+                            <div class="form-group">
+                                <label for="login_username">Username</label>
+                                <input type="text" id="login_username" placeholder="Masukkan username Anda" required autocomplete="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="login_password">Password</label>
+                                <input type="password" id="login_password" placeholder="Masukkan password" required autocomplete="current-password">
+                            </div>
+                            <div class="error-msg text-center" id="user-login-error">Username atau Password salah!</div>
+                            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                        </form>
+                        <div class="login-hint text-center mt-3">
+                            <p><small>Staff Logins: admin/admin123 • bendahara/bendahara123 • kepala/kepala123</small></p>
+                            <p><small>Orang Tua Logins: rian_ortu/admin123 • amel_ortu/admin123</small></p>
+                        </div>
+                    </div>
+
+                    <!-- Auth Box Body: Register -->
+                    <div class="auth-tab-content" id="auth-register-box">
+                        <div class="auth-header text-center">
+                            <h3>Registrasi Akun Orang Tua</h3>
+                            <p>Buat akun Orang Tua/Wali terlebih dahulu untuk mulai mendaftar PPDB.</p>
+                        </div>
+                        <form id="user-register-form">
+                            <div class="form-group">
+                                <label for="reg_username">Username <span class="required">*</span></label>
+                                <input type="text" id="reg_username" placeholder="Buat username unik (tanpa spasi)" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_password">Password <span class="required">*</span></label>
+                                <input type="password" id="reg_password" placeholder="Minimal 6 karakter" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_name">Nama Lengkap Orang Tua <span class="required">*</span></label>
+                                <input type="text" id="reg_name" placeholder="Masukkan nama lengkap" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_email">Email Aktif <span class="required">*</span></label>
+                                <input type="email" id="reg_email" placeholder="Contoh: nama@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_nohp">Nomor HP/WA Orang Tua <span class="required">*</span></label>
+                                <input type="tel" id="reg_nohp" placeholder="Contoh: 0812345678" required>
+                            </div>
+                            <div class="error-msg text-center" id="user-register-error">Gagal mendaftarkan akun!</div>
+                            <button type="submit" class="btn btn-primary btn-block">Daftar Akun</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= REGISTER & DASHBOARD (ORANG TUA) SECTION ================= -->
+        <section id="register-section" class="app-section">
+            <div class="container py-4">
+                
+                <!-- STATE 1: PARENT HAS NOT REGISTERED STUDENT (Top-Up Style Form) -->
+                <div id="parent-fill-form-container" class="hidden">
+                    <div class="register-layout-grid">
+                        
+                        <!-- Left Column: Step Card Forms -->
+                        <div class="form-column">
+                            <form id="ppdb-form" autocomplete="off" onsubmit="return false;">
+                                
+                                <!-- Card Step 1: Data Diri Calon Siswa (Gambar 2 - "Masukkan Data Akun") -->
+                                <div class="step-form-card">
+                                    <div class="step-card-header">
+                                        <span class="step-card-num">1</span>
+                                        <h3>Informasi Calon Siswa Baru</h3>
+                                    </div>
+                                    <div class="step-card-body">
+                                        <div class="form-grid">
+                                            <div class="form-group col-12">
+                                                <label for="nama_lengkap">Nama Lengkap Siswa <span class="required">*</span></label>
+                                                <input type="text" id="nama_lengkap" placeholder="Masukkan nama sesuai ijazah SMP" required>
+                                                <span class="error-text">Nama lengkap wajib diisi!</span>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="nisn">NISN (10 Digit Angka) <span class="required">*</span></label>
+                                                <input type="text" id="nisn" placeholder="10 Digit angka NISN" maxlength="10" required>
+                                                <span class="error-text">NISN harus berisi 10 digit angka!</span>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="nik">NIK (16 Digit Angka) <span class="required">*</span></label>
+                                                <input type="text" id="nik" placeholder="16 Digit angka NIK" maxlength="16" required>
+                                                <span class="error-text">NIK harus berisi 16 digit angka!</span>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="tempat_lahir">Tempat Lahir <span class="required">*</span></label>
+                                                <input type="text" id="tempat_lahir" placeholder="Kota lahir" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="tanggal_lahir">Tanggal Lahir <span class="required">*</span></label>
+                                                <input type="date" id="tanggal_lahir" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="jenis_kelamin">Jenis Kelamin <span class="required">*</span></label>
+                                                <select id="jenis_kelamin" required>
+                                                    <option value="">Pilih</option>
+                                                    <option value="Laki-laki">Laki-laki</option>
+                                                    <option value="Perempuan">Perempuan</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="agama">Agama <span class="required">*</span></label>
+                                                <select id="agama" required>
+                                                    <option value="">Pilih</option>
+                                                    <option value="Islam">Islam</option>
+                                                    <option value="Kristen Protestan">Kristen Protestan</option>
+                                                    <option value="Katolik">Katolik</option>
+                                                    <option value="Hindu">Hindu</option>
+                                                    <option value="Buddha">Buddha</option>
+                                                    <option value="Konghucu">Konghucu</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="alamat">Alamat Lengkap Rumah <span class="required">*</span></label>
+                                                <textarea id="alamat" rows="2" placeholder="Nama Jalan, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota" required></textarea>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="no_hp">WhatsApp Siswa <span class="required">*</span></label>
+                                                <input type="tel" id="no_hp" placeholder="Contoh: 0812xxxx" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="email">Email Siswa <span class="required">*</span></label>
+                                                <input type="email" id="email" placeholder="Contoh: nama@gmail.com" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card Step 2: Orang Tua / Wali -->
+                                <div class="step-form-card mt-3">
+                                    <div class="step-card-header">
+                                        <span class="step-card-num">2</span>
+                                        <h3>Informasi Orang Tua / Wali</h3>
+                                    </div>
+                                    <div class="step-card-body">
+                                        <div class="form-grid">
+                                            <div class="form-group col-6">
+                                                <label for="nama_ayah">Nama Ayah Kandung <span class="required">*</span></label>
+                                                <input type="text" id="nama_ayah" placeholder="Nama lengkap Ayah" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="pekerjaan_ayah">Pekerjaan Ayah <span class="required">*</span></label>
+                                                <select id="pekerjaan_ayah" required>
+                                                    <option value="">Pilih Pekerjaan</option>
+                                                    <option value="PNS/TNI/Polri">PNS/TNI/Polri</option>
+                                                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                                                    <option value="Wiraswasta/Pedagang">Wiraswasta/Pedagang</option>
+                                                    <option value="Petani/Nelayan/Buruh">Petani/Nelayan/Buruh</option>
+                                                    <option value="Tidak Bekerja">Tidak Bekerja</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="nama_ibu">Nama Ibu Kandung <span class="required">*</span></label>
+                                                <input type="text" id="nama_ibu" placeholder="Nama lengkap Ibu" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="pekerjaan_ibu">Pekerjaan Ibu <span class="required">*</span></label>
+                                                <select id="pekerjaan_ibu" required>
+                                                    <option value="">Pilih Pekerjaan</option>
+                                                    <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+                                                    <option value="PNS/TNI/Polri">PNS/TNI/Polri</option>
+                                                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                                                    <option value="Wiraswasta/Pedagang">Wiraswasta/Pedagang</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="no_hp_ortu">No. HP Orang Tua <span class="required">*</span></label>
+                                                <input type="tel" id="no_hp_ortu" placeholder="WhatsApp aktif" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="penghasilan_ortu">Total Penghasilan / Bulan <span class="required">*</span></label>
+                                                <select id="penghasilan_ortu" required>
+                                                    <option value="">Pilih Penghasilan</option>
+                                                    <option value="< Rp 1.000.000">&lt; Rp 1.000.000</option>
+                                                    <option value="Rp 1.000.000 - Rp 3.000.000">Rp 1.000.000 - Rp 3.000.000</option>
+                                                    <option value="Rp 3.000.000 - Rp 5.000.000">Rp 3.000.000 - Rp 5.000.000</option>
+                                                    <option value="> Rp 5.000.000">&gt; Rp 5.000.000</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card Step 3: Akademik & Jurusan (Gambar 2 - "Pilih Nominal") -->
+                                <div class="step-form-card mt-3">
+                                    <div class="step-card-header">
+                                        <span class="step-card-num">3</span>
+                                        <h3>Riwayat Sekolah & Program Keahlian</h3>
+                                    </div>
+                                    <div class="step-card-body">
+                                        <div class="form-grid">
+                                            <div class="form-group col-6">
+                                                <label for="asal_sekolah">Sekolah Asal (SMP/MTs) <span class="required">*</span></label>
+                                                <input type="text" id="asal_sekolah" placeholder="Nama sekolah asal" required>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="tahun_lulus">Tahun Lulus <span class="required">*</span></label>
+                                                <select id="tahun_lulus" required>
+                                                    <option value="2026">2026</option>
+                                                    <option value="2025">2025</option>
+                                                    <option value="2024">2024</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="pilihan_jurusan_1">Jurusan Pilihan Utama <span class="required">*</span></label>
+                                                <select id="pilihan_jurusan_1" required>
+                                                    <option value="">Pilih Jurusan Pertama</option>
+                                                    <option value="RPL">RPL - Rekayasa Perangkat Lunak</option>
+                                                    <option value="TKJ">TKJ - Teknik Komputer Jaringan</option>
+                                                    <option value="DKV">DKV - Desain Komunikasi Visual</option>
+                                                    <option value="AKL">AKL - Akuntansi & Keuangan Lembaga</option>
+                                                    <option value="OTKP">OTKP - Otomatisasi Perkantoran</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="pilihan_jurusan_2">Jurusan Pilihan Alternatif <span class="required">*</span></label>
+                                                <select id="pilihan_jurusan_2" required>
+                                                    <option value="">Pilih Jurusan Kedua</option>
+                                                    <option value="RPL">RPL - Rekayasa Perangkat Lunak</option>
+                                                    <option value="TKJ">TKJ - Teknik Komputer Jaringan</option>
+                                                    <option value="DKV">DKV - Desain Komunikasi Visual</option>
+                                                    <option value="AKL">AKL - Akuntansi & Keuangan Lembaga</option>
+                                                    <option value="OTKP">OTKP - Otomatisasi Perkantoran</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-12">
+                                                <h4 class="sub-form-title">Rata-Rata Rapor Smt 1-5 (Skala 0-100)</h4>
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <label for="nilai_mtk">Matematika <span class="required">*</span></label>
+                                                <input type="number" id="nilai_mtk" min="0" max="100" placeholder="Matematika" required>
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <label for="nilai_ipa">IPA <span class="required">*</span></label>
+                                                <input type="number" id="nilai_ipa" min="0" max="100" placeholder="IPA" required>
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <label for="nilai_indonesia">B. Indonesia <span class="required">*</span></label>
+                                                <input type="number" id="nilai_indonesia" min="0" max="100" placeholder="B. Indonesia" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card Step 4: Pilihan Jalur & Metode Pembayaran -->
+                                <div class="step-form-card mt-3">
+                                    <div class="step-card-header">
+                                        <span class="step-card-num">4</span>
+                                        <h3>Pilih Metode Pembayaran</h3>
+                                    </div>
+                                    <div class="step-card-body">
+                                        
+                                        <!-- Simulated Payments Selections -->
+                                        <div class="payment-method-container">
+                                            <h4 class="sub-form-title">Pilih Metode Pembayaran Formulir (Biaya: Rp 150.000)</h4>
+                                            
+                                            <!-- E-Wallets -->
+                                            <div class="payment-category">
+                                                <h5>E-Wallet (Instan & Aman)</h5>
+                                                <div class="payment-grid">
+                                                    <div class="payment-card-option" data-method="DANA">
+                                                        <div class="payment-logo dana">DANA</div>
+                                                        <div class="payment-details">
+                                                            <span class="pay-name">DANA Wallet</span>
+                                                            <span class="pay-fee">Biaya admin: Rp 0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment-card-option" data-method="OVO">
+                                                        <div class="payment-logo ovo">OVO</div>
+                                                        <div class="payment-details">
+                                                            <span class="pay-name">OVO Cash</span>
+                                                            <span class="pay-fee">Biaya admin: Rp 0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment-card-option" data-method="GoPay">
+                                                        <div class="payment-logo gopay">GoPay</div>
+                                                        <div class="payment-details">
+                                                            <span class="pay-name">GoPay Wallet</span>
+                                                            <span class="pay-fee">Biaya admin: Rp 0</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Bank VA -->
+                                            <div class="payment-category mt-3">
+                                                <h5>Transfer Bank / Virtual Account</h5>
+                                                <div class="payment-grid">
+                                                    <div class="payment-card-option" data-method="Transfer Bank BCA">
+                                                        <div class="payment-logo bca">BCA</div>
+                                                        <div class="payment-details">
+                                                            <span class="pay-name">BCA Virtual Account</span>
+                                                            <span class="pay-fee">No. Rek: 124-0098765432</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment-card-option" data-method="Transfer Bank Mandiri">
+                                                        <div class="payment-logo mandiri">Mandiri</div>
+                                                        <div class="payment-details">
+                                                            <span class="pay-name">Mandiri VA</span>
+                                                            <span class="pay-fee">No. Rek: 900-1122334455</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Cash -->
+                                            <div class="payment-category mt-3">
+                                                <h5>Pembayaran Fisik / Manual</h5>
+                                                <div class="payment-grid">
+                                                    <div class="payment-card-option" data-method="Cash Koperasi">
+                                                        <div class="payment-logo cash">TUNAI</div>
+                                                        <div class="payment-details">
+                                                            <span class="pay-name">Tunai di Koperasi Sekolah</span>
+                                                            <span class="pay-fee">Bawa tanda bukti manual ke loket</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="agreement-checkbox mt-4">
+                                            <input type="checkbox" id="pernyataan_setuju" required>
+                                            <label for="pernyataan_setuju">
+                                                Saya menyatakan bahwa seluruh data yang diisikan adalah <strong>benar, sah, dan lengkap</strong>.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Right Column: Live Summary Checkout Card (Gambar 2 Style) -->
+                        <div class="summary-column">
+                            <div class="checkout-summary-card">
+                                <div class="summary-card-header">
+                                    <h4>Ringkasan Pendaftaran</h4>
+                                </div>
+                                <div class="summary-card-body">
+                                    <div class="summary-info-item">
+                                        <span class="lbl">Calon Siswa</span>
+                                        <span class="val font-bold" id="live-summary-nama">-</span>
+                                    </div>
+                                    <div class="summary-info-item">
+                                        <span class="lbl">NISN</span>
+                                        <span class="val" id="live-summary-nisn">-</span>
+                                    </div>
+                                    <div class="summary-info-item">
+                                        <span class="lbl">Pilihan Jurusan</span>
+                                        <span class="val color-primary font-bold" id="live-summary-jurusan">-</span>
+                                    </div>
+                                    <div class="summary-info-item">
+                                        <span class="lbl">Rata-Rata Rapor</span>
+                                        <span class="val font-bold" id="live-summary-nilai">-</span>
+                                    </div>
+                                    <hr class="summary-divider">
+                                    
+                                    <div class="summary-info-item">
+                                        <span class="lbl">Metode Pembayaran</span>
+                                        <span class="val badge badge-process" id="live-summary-metode">Belum Dipilih</span>
+                                    </div>
+                                    <div class="summary-info-item total-fee-row">
+                                        <span class="lbl">Biaya Formulir</span>
+                                        <span class="val total-amount">Rp 150.000</span>
+                                    </div>
+                                    
+                                    <div class="payment-instruction-box hidden" id="payment-instruction-box">
+                                        <h5>Instruksi Pembayaran:</h5>
+                                        <p id="payment-instruction-text"></p>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-block btn-large mt-3" id="btn-submit-registration" disabled>
+                                        Daftar & Bayar Sekarang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- STATE 2: PARENT HAS REGISTERED STUDENT (Student Progress Dashboard) -->
+                <div id="parent-student-dashboard" class="hidden">
+                    <div class="dashboard-parent-box">
+                        <div class="parent-welcome-header">
+                            <div>
+                                <h2>Dashboard PPDB Siswa Baru</h2>
+                                <p>Orang Tua Calon Siswa: <strong id="parent-account-name">Nama Orang Tua</strong></p>
+                            </div>
+                            <button class="btn btn-outline btn-logout-action">Keluar Akun</button>
+                        </div>
+
+                        <!-- Progress Tracker Bar (Use Case flow visualizer) -->
+                        <div class="progress-tracker-bar">
+                            <div class="tracker-step completed" id="track-step-1">
+                                <span class="tracker-dot">✓</span>
+                                <span class="tracker-label">Daftar Akun</span>
+                            </div>
+                            <div class="tracker-step completed" id="track-step-2">
+                                <span class="tracker-dot">✓</span>
+                                <span class="tracker-label">Formulir Pendaftaran</span>
+                            </div>
+                            <div class="tracker-step" id="track-step-3">
+                                <span class="tracker-dot" id="track-dot-pembayaran">3</span>
+                                <span class="tracker-label">Uang Pendaftaran</span>
+                            </div>
+                            <div class="tracker-step" id="track-step-4">
+                                <span class="tracker-dot" id="track-dot-berkas">4</span>
+                                <span class="tracker-label">Verifikasi Berkas</span>
+                            </div>
+                            <div class="tracker-step" id="track-step-5">
+                                <span class="tracker-dot" id="track-dot-status">5</span>
+                                <span class="tracker-label">Pengumuman</span>
+                            </div>
+                        </div>
+
+                        <div class="parent-dashboard-grid mt-4">
+                            <!-- Left Card: Student Info & Admission status -->
+                            <div class="dashboard-details-card">
+                                <h3>Data Pendaftaran Siswa</h3>
+                                <table class="info-table mt-3">
+                                    <tr>
+                                        <td><strong>No. Registrasi:</strong></td>
+                                        <td><span class="text-highlight font-bold" id="dash-reg-id">REG-XXXXX</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Nama Siswa:</strong></td>
+                                        <td><span id="dash-nama">Nama Lengkap</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NISN / NIK:</strong></td>
+                                        <td><span id="dash-nisn-nik">NISN / NIK</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Asal Sekolah:</strong></td>
+                                        <td><span id="dash-asal-sekolah">Sekolah</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pilihan Jurusan:</strong></td>
+                                        <td><span class="color-primary font-bold" id="dash-jurusan">RPL (Utama) / TKJ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rata-Rata Rapor:</strong></td>
+                                        <td><span class="font-bold" id="dash-nilai">0.0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status Pendaftaran:</strong></td>
+                                        <td><span class="badge" id="dash-status-pendaftar">Sedang Diproses</span></td>
+                                    </tr>
+                                </table>
+
+                                <!-- Print actions shown conditionally -->
+                                <div class="dashboard-actions-row mt-4 hidden" id="parent-print-actions">
+                                    <button class="btn btn-primary" id="btn-print-lulus-dashboard">
+                                        Cetak Surat Kelulusan
+                                    </button>
+                                    <button class="btn btn-outline" id="btn-print-kartu-dashboard">
+                                        Cetak Kartu Registrasi
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Right Card: Payment Proof upload form -->
+                            <div class="dashboard-details-card">
+                                <h3>Informasi Pembayaran Formulir</h3>
+                                
+                                <div class="payment-status-box mt-3" id="parent-payment-status-card">
+                                    <div class="status-row">
+                                        <span>Status Pembayaran:</span>
+                                        <span class="badge" id="dash-status-pembayaran">Belum Bayar</span>
+                                    </div>
+                                    <div class="status-row mt-2">
+                                        <span>Metode Pembayaran:</span>
+                                        <span class="font-bold" id="dash-metode-pembayaran">DANA</span>
+                                    </div>
+                                    <div class="status-row mt-2" id="row-bukti-file">
+                                        <span>Bukti Pembayaran:</span>
+                                        <span class="font-bold text-success" id="dash-bukti-filename">-</span>
+                                    </div>
+                                </div>
+
+                                <!-- Upload Area for Bukti Pembayaran -->
+                                <div class="payment-upload-panel mt-3" id="payment-upload-panel">
+                                    <div class="info-alert">
+                                        <p>Silakan bayar biaya formulir sebesar <strong>Rp 150.000</strong> ke rekening/e-wallet di atas. Setelah transfer, upload foto bukti pembayaran Anda di bawah.</p>
+                                    </div>
+                                    <form id="payment-upload-form" class="mt-3">
+                                        <div class="form-group">
+                                            <label for="bukti_bayar_input" class="upload-area-label">
+                                                <div class="upload-icon">&#8679;</div>
+                                                <span>Pilih File Gambar Bukti Transfer</span>
+                                                <small>(Maksimal file 2MB, format JPG/PNG)</small>
+                                            </label>
+                                            <input type="file" id="bukti_bayar_input" name="bukti_bayar" accept="image/*" class="hidden-input-file" required>
+                                        </div>
+                                        <div class="file-name-preview mt-2 hidden" id="file-name-preview">Nama_file.jpg</div>
+                                        <button type="submit" class="btn btn-primary btn-block mt-3" id="btn-upload-payment">
+                                            Kirim Bukti Pembayaran
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= STATUS SECTION (CEK KELULUSAN) ================= -->
+        <section id="status-section" class="app-section">
+            <div class="container py-4">
+                <div class="card status-checker-card">
+                    <div class="card-header text-center">
+                        <h2>Portal Cek Status Kelulusan PPDB</h2>
+                        <p>Masukkan Nomor Registrasi Anda untuk mengetahui hasil seleksi administrasi dan kompetensi.</p>
+                    </div>
+                    <div class="card-body">
+                        <form id="search-status-form" class="search-form">
+                            <div class="search-input-group">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                                <input type="text" id="input-search-reg" placeholder="Masukkan Nomor Registrasi (Contoh: REG-10283)" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Periksa Status</button>
+                        </form>
+
+                        <!-- Search Result Container -->
+                        <div class="search-result-container hidden" id="status-result-box">
+                            <!-- JS will inject the result content here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STAFF / PANITIA SECTION (DASHBOARDS) ================= -->
+        <section id="admin-section" class="app-section">
+            <div class="container py-4">
+                
+                <!-- STAFF DASHBOARDS CONTAINER -->
+                <div class="staff-dashboards-box">
+                    
+                    <!-- Unified Staff Header -->
+                    <div class="dashboard-header">
+                        <div>
+                            <h2 id="staff-dashboard-title">Dashboard Panitia PPDB 2026</h2>
+                            <p>SMK Bina Nusa • Selamat datang, <strong id="admin-session-user">Panitia</strong> • Peran: <span class="badge badge-accept" id="staff-session-role">Staff</span></p>
+                        </div>
+                        <button class="btn btn-outline btn-logout-action">
+                            Log Out
+                        </button>
+                    </div>
+
+                    <!-- ROLE 1: ADMIN DASHBOARD (Manage Registrants) -->
+                    <div id="staff-admin-panel" class="hidden">
+                        <!-- Statistics Cards -->
+                        <div class="stats-row">
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Total Pendaftar</span>
+                                    <div class="stat-icon icon-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-value" id="stat-total-pendaftar">0</div>
+                                <div class="stat-desc">Siswa teregistrasi di sistem</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Diterima</span>
+                                    <div class="stat-icon icon-green">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-value" id="stat-diterima">0</div>
+                                <div class="stat-desc">Lolos seleksi administrasi & tes</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Sedang Diproses</span>
+                                    <div class="stat-icon icon-yellow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-value" id="stat-diproses">0</div>
+                                <div class="stat-desc">Menunggu tinjauan berkas</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Ditolak</span>
+                                    <div class="stat-icon icon-red">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" x2="9" y1="9" y2="15"/><line x1="9" x2="15" y1="9" y2="15"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-value" id="stat-ditolak">0</div>
+                                <div class="stat-desc">Belum memenuhi kriteria</div>
+                            </div>
+                        </div>
+
+                        <!-- Visual Charts -->
+                        <div class="charts-row mt-4">
+                            <div class="chart-card">
+                                <h3>Distribusi Jurusan Utama</h3>
+                                <div class="custom-chart-container" id="major-dist-chart">
+                                    <!-- JS fill -->
+                                </div>
+                            </div>
+                            <div class="chart-card">
+                                <h3>Top 5 Asal Sekolah Pendaftar</h3>
+                                <div class="custom-chart-container" id="school-dist-chart">
+                                    <!-- JS fill -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Manage Registrants Panel -->
+                        <div class="dashboard-table-card mt-4">
+                            <div class="table-header-controls">
+                                <h3>Daftar Siswa Pendaftar</h3>
+                                <div class="controls-group">
+                                    <input type="text" id="admin-search-input" placeholder="Cari nama atau nomor registrasi...">
+                                    
+                                    <select id="admin-filter-jurusan">
+                                        <option value="">Semua Jurusan</option>
+                                        <option value="RPL">RPL</option>
+                                        <option value="TKJ">TKJ</option>
+                                        <option value="DKV">DKV</option>
+                                        <option value="AKL">AKL</option>
+                                        <option value="OTKP">OTKP</option>
+                                    </select>
+
+                                    <select id="admin-filter-status">
+                                        <option value="">Semua Status</option>
+                                        <option value="Diterima">Diterima</option>
+                                        <option value="Sedang Diproses">Sedang Diproses</option>
+                                        <option value="Cadangan">Cadangan</option>
+                                        <option value="Ditolak">Ditolak</option>
+                                    </select>
+
+                                    <button class="btn btn-outline" id="btn-admin-reset-data">Reset Simulasi</button>
+                                </div>
+                            </div>
+
+                            <div class="table-wrapper">
+                                <table class="data-table" id="admin-registrants-table">
+                                    <thead>
+                                        <tr>
+                                            <th>No. Reg</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Asal Sekolah</th>
+                                            <th>Jurusan 1</th>
+                                            <th>Rata Rapor</th>
+                                            <th>Status Berkas</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- JS will inject table rows dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROLE 2: BENDAHARA DASHBOARD (Manage Payments) -->
+                    <div id="staff-bendahara-panel" class="hidden">
+                        <div class="dashboard-table-card mt-3">
+                            <div class="table-header-controls">
+                                <h3>Verifikasi Pembayaran Formulir PPDB</h3>
+                                <div class="controls-group">
+                                    <input type="text" id="bendahara-search-input" placeholder="Cari nama atau nomor registrasi...">
+                                    <select id="bendahara-filter-status">
+                                        <option value="">Semua Status Pembayaran</option>
+                                        <option value="Menunggu Verifikasi">Menunggu Verifikasi</option>
+                                        <option value="Lunas">Lunas</option>
+                                        <option value="Ditolak">Ditolak</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="table-wrapper">
+                                <table class="data-table" id="bendahara-payments-table">
+                                    <thead>
+                                        <tr>
+                                            <th>No. Reg</th>
+                                            <th>Nama Siswa</th>
+                                            <th>Metode Bayar</th>
+                                            <th>Waktu Bayar</th>
+                                            <th>Status Bayar</th>
+                                            <th>Bukti Transfer</th>
+                                            <th>Tindakan Verifikasi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- JS will inject payment rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROLE 3: KEPALA PANITIA DASHBOARD (Laporan & Laporan Pembayaran) -->
+                    <div id="staff-kepala-panel" class="hidden">
+                        <!-- Stats Financial Summary (Kepala Panitia Laporan) -->
+                        <div class="stats-row">
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Jumlah Pendaftar</span>
+                                    <div class="stat-icon icon-blue">👤</div>
+                                </div>
+                                <div class="stat-value" id="kepala-total-siswa">0</div>
+                                <div class="stat-desc">Siswa terdaftar dalam database</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Total Pembayaran Lunas</span>
+                                    <div class="stat-icon icon-green">💳</div>
+                                </div>
+                                <div class="stat-value" id="kepala-total-lunas">0</div>
+                                <div class="stat-desc">Siswa terverifikasi membayar</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Total Pendapatan Terkumpul</span>
+                                    <div class="stat-icon icon-blue">💰</div>
+                                </div>
+                                <div class="stat-value text-success" id="kepala-total-revenue">Rp 0</div>
+                                <div class="stat-desc">Berdasarkan biaya formulir Rp 150K</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-card-header">
+                                    <span class="stat-title">Menunggu Verifikasi</span>
+                                    <div class="stat-icon icon-yellow">⏳</div>
+                                </div>
+                                <div class="stat-value" id="kepala-pending-verifikasi">0</div>
+                                <div class="stat-desc">Bukti transfer belum diperiksa</div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Metrics & charts -->
+                        <div class="charts-row mt-4">
+                            <div class="chart-card">
+                                <h3>Grafik Persentase Penerimaan Siswa</h3>
+                                <div class="acceptance-percentage-box mt-3">
+                                    <div class="percentage-bars-container" id="kepala-accept-bars">
+                                        <!-- JS Fill -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-card">
+                                <h3>Distribusi Pembayaran</h3>
+                                <div class="acceptance-percentage-box mt-3">
+                                    <div class="percentage-bars-container" id="kepala-payment-bars">
+                                        <!-- JS Fill -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Laporan Pilihan Jurusan -->
+                        <div class="dashboard-table-card mt-4">
+                            <h3>Laporan Peminatan Jurusan Calon Siswa</h3>
+                            <div class="table-wrapper">
+                                <table class="data-table" id="kepala-majors-report-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Program Keahlian</th>
+                                            <th>Jumlah Peminat Utama</th>
+                                            <th>Total Peminat Lunas</th>
+                                            <th>Persentase Peminatan (%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- JS will populate -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="footer-logo-svg"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                    </div>
+                    <span class="school-name">SMK BINA NUSA</span>
+                </div>
+                <p>Mencetak insan profesional, terampil, dan berdaya saing global untuk menyongsong masa depan digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="#home" class="btn-nav-trigger" data-target="home-section">Beranda</a>
+                <a href="#jurusan" class="btn-nav-trigger" data-target="jurusan-section">Daftar Jurusan</a>
+                <a href="#alur" class="btn-nav-trigger" data-target="alur-section">Alur & Jadwal</a>
+                <a href="#cek-status" class="btn-nav-trigger" data-target="status-section">Portal Cek Kelulusan</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p>📍 Jl. Raya Pendidikan No. 45, Komplek Edukasi, Jawa Barat</p>
+                <p>📞 (021) 555-0199 / WhatsApp: 0812-9988-7766</p>
+                <p>✉️ info@smkbinanusa.sch.id</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SMK Bina Nusa. All Rights Reserved. Tugas Kuliah PPDB Online.</p>
+        </div>
+    </footer>
+
+    <!-- Detail Student Modal for Admin -->
+    <div class="modal hidden" id="student-detail-modal">
+        <div class="modal-backdrop" id="modal-backdrop-trigger"></div>
+        <div class="modal-content-wrapper">
+            <div class="modal-header">
+                <h3>Detail Pendaftar</h3>
+                <button class="modal-close" id="btn-close-modal">×</button>
+            </div>
+            <div class="modal-body" id="student-detail-modal-body">
+                <!-- JS will inject details -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="btn-modal-close-action">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bukti Bayar Preview Modal for Bendahara -->
+    <div class="modal hidden" id="payment-receipt-modal">
+        <div class="modal-backdrop" id="receipt-modal-backdrop-trigger"></div>
+        <div class="modal-content-wrapper receipt-modal-wrapper">
+            <div class="modal-header">
+                <h3>Verifikasi Bukti Transfer Pembayaran</h3>
+                <button class="modal-close" id="btn-close-receipt-modal">×</button>
+            </div>
+            <div class="modal-body text-center" id="payment-receipt-modal-body">
+                <!-- Image of receipt will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="btn-verify-reject">Tolak Pembayaran</button>
+                <button class="btn btn-success" id="btn-verify-approve">Setujui Pembayaran (Lunas)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Printable Card Area (Will only print via print CSS styles) -->
+    <div class="print-container-card" id="printable-card-area">
+        <!-- JS will populate student registration card dynamically on print trigger -->
+    </div>
+
+    <!-- Javascript Script -->
+    <script src="app.js"></script>
+</body>
+</html>
